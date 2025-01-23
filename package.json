@@ -8,5 +8,8 @@
     "start": "parcel",
     "build": "parcel build"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
 }
