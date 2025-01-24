@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
   }
 }
