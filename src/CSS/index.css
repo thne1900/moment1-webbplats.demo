@@ -36,6 +36,7 @@ line-height: 1.6;}
 
 .footer {grid-area:4/1/5/4;}
 footer {background-color:purple;
+    color:white;
      font-size: 0.8em;
-font-weight: 500;
+font-weight: bold;
 text-align: center;}
