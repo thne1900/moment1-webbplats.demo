@@ -19,4 +19,14 @@
 
 ### Arbetsprocess: 
 - Efter att projektets grund var skapad, med filer, kataloger och inställningar skapades ett repo till GitHub, versionshantering, med samma namn.
-- Därefer skapades ett inlogg på Netlify, där mitt repo från GitHub kunde synkas Netlify för publicering. 
+- Därefer skapades ett inlogg på Netlify, där mitt repo från GitHub skulle synkas med Netlify för att kunna publiceera webbplatsen. 
+- Vid hämtningen från Github av repot på Netlify , dök ett felmeddelande upp som sa att det inte gick att "bygga" webbplatsen.
+-Försökte då finna vad felet kunde vara, kontrollerade därför alla inställningar och koder med dess syntaxer.
+- Det visade sig att "devDependencies":{"parcel": "^2.13.3"} saknades i package.json filen.
+- Därför kördes installationen kring parcel på nytt och då kom det upp. Därefter gick det att bygga webbplatsen från Netlify. 
+- När allt verkade fungera, börjades webbplatsen dokument utformas, med vad som skulle finnas med på sidorna med bla texter och bilder. 
+- Jag testade även att skapa en ny "branch"-Dev för att utforma mina dokument och testa innan det blev publicerat. Men misstänker att det blev någon miss när sammankopplingen till huvudgrenen skulle göras så det uppkom även här felmeddelande. Så därför valde jag att ta bort denna för att göra om på nytt. 
+- Körde därefter några ändringar med bilder och tillägg i main-brachen för att se så att det blev rätt med synkningen till både Github och Netlify.
+- Vid arbetet med bilderna, uppkom felmeddelande om att "Sharp" eventullt skulle användas, så därför testades detta att installera.
+- Därefter skapades en ny "branch"-Dev1. I denna utformades documenten ytterligare.
+- Utformade html-documenten mer kring responsiviteten och lade till en hamburger-meny vid mindre skärmstorlek. Använde js-kod för det som placerades i den separata js-filen. 
