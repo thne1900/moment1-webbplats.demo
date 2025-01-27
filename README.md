@@ -32,4 +32,7 @@
 - Utformade html-documenten mer kring responsiviteten och lade till en hamburger-meny vid mindre skärmstorlek. Använde js-kod för det som placerades i den separata js-filen. 
 - Fortsatt arbete i branch-Dev1, med att strukturerar en del på bildfilerna.
 - Började skriva mer kring arbetsprocessen, som en undersidan på webbplatsen ska bestå av. 
+- När de mesta av innehållet på respektive sidor kändes klara, skickades "dev1" till "main". Denna gången fungerade det utan att felmeddelande dök upp. 
+- Körde också kommando för att de publiceringaklara filerna skulle vara nåbara.
+- Kunde därefter publicera webbplatsen via Netlify och där användes även testverktygen Lighthouse och Wave för att kontrollera eventuella fel/brister. 
 
