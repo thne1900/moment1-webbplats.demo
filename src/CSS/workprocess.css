@@ -12,9 +12,10 @@ body {background-color: rgb(212, 166, 249);
         height: 120px;}
     
     header {box-shadow: 2px 2px 4px rgba(0,0,0.1);}
+
     .grid-container {display: grid;
     grid-template-rows: auto;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     grid-column-gap: 2%;}
 
     #menu-responsive {display:flex;
@@ -46,22 +47,35 @@ body {background-color: rgb(212, 166, 249);
     
     nav li {margin-right: 20px;}
     
-    
     h1 { grid-row-start: 1;
         grid-column-start: 1;
         grid-row-end: 1;
-        grid-column-end: 4;
+        grid-column-end: 3;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     text-shadow: 4px 4px 8px white;}
 
-h2 {grid-area:2/1/2/1; text-align: center;}
+.first {grid-area:2/1/2/1; text-align: center;}
+
+.second {grid-area:2/2/2/2; text-align: center;}
+
 .textobject1 {grid-area:3/1/4/1;
-margin-left: 10%;}
-.textobject p {font-weight: bold;}
+margin-left: 15%; margin-right:4%;
+font-weight: bold;}
+
+.textobject2 {grid-area:3/2/4/3; 
+    margin-right:15%; 
+    margin-left: 4%; 
+    font-weight: bold;}
+
 .list1 {grid-area:4/1/5/1;
-margin-left: 10%;}
+margin-left: 10%; 
+margin-bottom: 8%;}
+
+.list2 {grid-area:4/2/5/2; 
+    margin-right:10%; 
+    margin-bottom: 8%;}
 
     .footer {grid-area:5/1/6/4;}
 footer {background-color:purple;
@@ -86,3 +100,13 @@ footer {background-color:purple;
             .links a {font-size: 1em;}
             .links.active {display:flex;}
             }
+@media (max-width:600px) {
+
+    .first {grid-area:2/1/2/3;}
+    .textobject1 {grid-area:3/1/4/3; margin-right: 4%; margin-left: 8%;}
+    .list1 {grid-area:4/1/5/3; margin-right: 8%;}
+    .second {grid-area:5/1/6/3;}
+    .textobject2 {grid-area:6/1/7/3;margin-right:4%; margin-left:8%;}
+    .list2 {grid-area:7/1/8/3; margin-right: 8%; margin-left:10%;}
+    .footer {grid-area:8/1/9/3;}
+}
