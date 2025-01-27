@@ -1,3 +1,4 @@
+/*The body has been given a background color, font-family, text size, line height, width, height and margin.*/
 body {background-color: rgb(212, 166, 249);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
@@ -7,47 +8,58 @@ body {background-color: rgb(212, 166, 249);
     margin-left:auto;
     margin-right:auto;}
 
-    #header {background-color:purple;
+/*Header has been given a background color, width and height.*/
+#header {background-color:purple;
         max-width:1512px;
         height: 120px;}
-    
-    header {box-shadow: 2px 2px 4px rgba(0,0,0.1);}
 
-    .grid-container {display: grid;
+/*The element has also been given a shadow.*/    
+header {box-shadow: 2px 2px 4px rgba(0,0,0.1);}
+
+/*Grid container for placing the elements on the page.*/
+.grid-container {display: grid;
     grid-template-rows: auto;
     grid-template-columns:repeat(2, 1fr);
     grid-column-gap: 2%;}
 
-    #menu-responsive {display:flex;
+/*The menu has received placement, centered text, padding and margin.*/
+#menu-responsive {display:flex;
         justify-content: space-between;
         justify-content: right;
         align-items:center;
-        padding: 2%;
-        margin:2%;
-    cursor: pointer;}
-    
-    .menu-hamburger {display: none;
+        padding:2%;
+        margin:2%;}
+   
+ /*The menu on the smaller screen has been placed and received a cursor.*/        
+.menu-hamburger {display: none;
     flex-direction: column;
     cursor: pointer;}
     
-    .row {width:50px;
+/*The design of the menu on a small screen has been given three lines, with sizes and background color and margin.*/ 
+.row {width:50px;
     height:5px;
     background-color: white;
     margin:5px;}
-    
-    .links{list-style: none;
+
+ /*The elements have not been styled and given a location.*/   
+.links{list-style: none;
     display: flex;}
     
-    .links a {color:white;
+/*The links have been given color, text size, bold style and no text decoration.*/
+.links a {color:white;
         font-size: 1.4em;
         font-weight: bold;
     text-decoration: none;}
+
+/*Links have been given hovers with color and "pointing finger".*/    
+a:hover {color: black;
+cursor: pointer;}
     
-    a:hover {color: black;}
+/*The li element of the menu has been given a margin.*/  
+nav li {margin-right: 20px;}
     
-    nav li {margin-right: 20px;}
-    
-    h1 { grid-row-start: 1;
+/*The main heading has been given placement, margin, centered text and shading.*/   
+h1 { grid-row-start: 1;
         grid-column-start: 1;
         grid-row-end: 1;
         grid-column-end: 3;
@@ -56,33 +68,44 @@ body {background-color: rgb(212, 166, 249);
         text-align: center;
     text-shadow: 4px 4px 8px white;}
 
+/*Subheading has been placed with grid area and centered text.*/
 .first {grid-area:2/1/2/1; text-align: center;}
 
+/*Subheading has been placed with grid area and centered text.*/
 .second {grid-area:2/2/2/2; text-align: center;}
 
+/*Text has been placed with grid area, margin and bold style.*/
 .textobject1 {grid-area:3/1/4/1;
-margin-left: 15%; margin-right:4%;
+margin-left: 15%; 
+margin-right:4%;
 font-weight: bold;}
 
+/*Text has been placed with grid area, margin and bold style.*/
 .textobject2 {grid-area:3/2/4/3; 
     margin-right:15%; 
     margin-left: 4%; 
     font-weight: bold;}
 
+/*The list of text has been placed with grid area and margin.*/
 .list1 {grid-area:4/1/5/1;
 margin-left: 10%; 
 margin-bottom: 8%;}
 
+/*The list of text has been placed with grid area and margin.*/
 .list2 {grid-area:4/2/5/2; 
     margin-right:10%; 
     margin-bottom: 8%;}
 
-    .footer {grid-area:5/1/6/4;}
+/*The footer has been placed with a grid area.*/
+.footer {grid-area:5/1/6/4;}
+
+/*The footer has been given a background color, text color, text size and centered text.*/
 footer {background-color:purple;
         font-size: 0.8em;
         text-align: center;
         color: white;}
 
+/*Media rule with break point at 1024px, another menu (hamburger) is displayed. Elements get different sizes.*/
 @media (max-width:1024px) {
             .menu-hamburger{display:flex;}
             .links {display: none;
@@ -100,8 +123,8 @@ footer {background-color:purple;
             .links a {font-size: 1em;}
             .links.active {display:flex;}
             }
+/*Media rule with breakpoint at 600px; headings, text and lists of text have been placed in a column and margins.*/
 @media (max-width:600px) {
-
     .first {grid-area:2/1/2/3;}
     .textobject1 {grid-area:3/1/4/3; margin-right: 4%; margin-left: 8%;}
     .list1 {grid-area:4/1/5/3; margin-right: 8%;}

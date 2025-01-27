@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Undersidan Bilder, innehållande 5 st bilder">
-<link rel="stylesheet" href="CSS/pictures.css">
+<meta name="description" content="Undersidan Bilder, innehållande 5 st bilder"><!--keywords for search engines-->
+<link rel="stylesheet" href="CSS/pictures.css"><!--Link to the page's css file-->
 <title>Bilder</title>
-<script src="js/main.js" type="module"></script>
+<script src="js/main.js" type="module"></script><!--Linked javascript file-->
 </head>
 <body>
     <header id="header">
+<!--The web page's nav menu with a different design for smaller screen devices.-->
             <nav id="menu-responsive">
                 <div id="menu-hamburger" class="menu-hamburger">
                 <span class="row"></span>
@@ -25,6 +26,7 @@
     </header>
     <div class="grid-container">
         <h1>Bilder:</h1>
+<!--Picture element containing information that can optimize the images according to file format.-->
         <picture class="pic1">
             <source srcset="./images/code.jpg?as=avif&width=700" type="image/avif"/>
             <source srcset="./images/code.jpg?as=webp&width=700" type="image/webp"/>
@@ -55,8 +57,9 @@
     <source srcset="./images/image.o.jpg?width=500" type="image/jpg"/>
     <img src="./images/image.o.jpg?width=300" alt="Bokstaven O"/>
 </picture>
+ <!--Page footer with shorter information-->
         <footer class="footer">
-            <p><strong>DT211- Frontend-baserad webbutveckling</strong></p>
+            <p><strong>DT211G- Frontend-baserad webbutveckling</strong></p>
             <p>Moment 1: Automatisering & publicering</p>
             <p>Thne1900</p>
             <p>VT 2025</p>

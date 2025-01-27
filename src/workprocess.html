@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Undersidan arbetsprocess, 
-beskrivande text om hur arbetsprocessen kring automatisering och publicering av webbplatsen sett ut">
-<link rel="stylesheet" href="CSS/workprocess.css">
+beskrivande text om hur arbetsprocessen kring automatisering och publicering av webbplatsen sett ut"><!--keywords for search engines-->
+<link rel="stylesheet" href="CSS/workprocess.css"><!--Link to the page's css file-->
 <title>Arbetsprocess</title>
-<script src="js/main.js" type="module"></script>
+<script src="js/main.js" type="module"></script><!--Linked javascript file-->
 </head>
 <body>
     <header id="header">
+<!--The web page's nav menu with a different design for smaller screen devices.-->
         <nav id="menu-responsive">
             <div id="menu-hamburger" class="menu-hamburger">
             <span class="row"></span>
@@ -26,32 +27,34 @@ beskrivande text om hur arbetsprocessen kring automatisering och publicering av 
     </header>
     <div class="grid-container">
 <h1>Arbetsprocessen:</h1>
+<!--Headings, text and unsorted lists of text content.-->
 <h2 class="first">Initialt</h2>
 <p class="textobject1">
     Här kommer en beskrivning på hur jag initialt började mitt projekt (webbplats demo) 
-    kring automaticering och publicering som Moment 1 bygger på.</p>
+    kring automatisering och publicering som Moment 1 bygger på.</p>
 <ul class="list1">
     <li>Jag började med att skapade en katalog för projektet: "moment1-webbplats.demo" och öppnade upp denna i VSC (Visual Studio Code).</li>
     <li>I terminalen skrev jag in ett kommando, för att öppna upp ett nytt "Node Package Manager"-projekt (npm init).</li>
     <li>Efter detta kom "package.json"-filen upp i VSC, innehållande information om projektet. Jag kontrollerade dessa uppgifter och ordnade upp dem, 
         några togs bort och några lades till.</li>
     <li>Därefter gjorde jag en installation med parcel, via terminalen (npm install parcel --save-dev). 
-        Packetkataloger/filer kom då upp och hamnade i fil-listan för projektet, som ex node_modules.</li>
-    <li> Jag skapade en ny fil (.gitignore) till de filer som <strong>inte</strong> ska versionshanteras. 
-        Placerade därför node_modules och package-lock.json filerna där då dessa skulle exkluderas från versionshantering.</li>
+        Paketkataloger/filer kom då upp och hamnade i fil-listan för projektet, som ex node_modules.</li>
+    <li> Jag skapade en ny fil (.gitignore) till de filer som <strong>inte</strong> skulle versionshanteras. 
+        Placerade därför node_modules och package-lock.json filerna där, då dessa skulle exkluderas från versionshantering.</li>
     <li>I "package.json"-filen lades inställningar kring "source" in, från vilken dokument webbplatsen ska starta ifrån. 
-        Även kommandon som "start" och "build" lades till, för att kunna nå den kommande webbplatsen och även att kunna bygga 
+        Även kommandon som "start" och "build" lades till, för att kunna nå den kommande webbplatsen och att även kunna bygga 
         ihop den och dess ihoppackade filer inför publicering.</li>
     <li> Efter det, gjorde jag en katalog "src", då det är den parcel utgår ifrån, innehållande mina arbetsfiler. 
         Så i denna src-katalog skapade jag de filer/mappar som webbplatsen ska komma att innehålla (html, css, js, images) 
-        så att dessa blev strukturerade och tydliga att hitta. </li> 
+        så att dessa blev strukturerade och tydliga att hitta. Jag gjorde även en README-fil för att även därifrån kunna följa min arbetsprocess. </li> 
     <li> Sedan skrev jag in lite grundkoder i html och css-filen för att kunna testköra kommandon: "npm start" och "npm build", 
         för att kontrollera att kommandona fungerade. Jag kunde nå den skapande URL:en vid körning av "npm start" och en 
         katalog tillkom (dist) vid körning av kommandot "npm build", för den publiceringsklara webbplatsen.</li>
+    <li>Jag lade även till dist och .parcel-cache katalogen i .gitignorefilen då dessa inte heller behöver versionshanteras.</li>
 </ul>
 <h2 class="second">Utvecklingen</h2>
 <p class="textobject2">
-    Nedan följer en beskrivning på hur jag arbetade vidare på min webbplats och hur gången har sett ut. 
+    Nedan följer en beskrivning på hur jag arbetade vidare på min webbplats och hur arbetsgången sett ut. 
 </p>
 <ul class="list2">
 <li> Efter att projektets grund var skapad, med filer, kataloger och inställningar skapade jag ett nytt repo till GitHub (versionshantering) med samma namn.</li>
@@ -66,10 +69,15 @@ beskrivande text om hur arbetsprocessen kring automatisering och publicering av 
 <li> Jag testkörde med några ändringar på bilder och tillägg i main-brachen för att se så att det blev rätt med synkningen till både Github och Netlify utan felmeddelanden.</li>
 <li> När jag arbetade med bilderna, uppkom felmeddelande om att "Sharp" eventullt skulle användas, så därför testades detta att installera.
 <li> Jag valde här att skapa en ny "branch"-Dev1. I denna utformades dokumenten ytterligare med innehåll i respektive fil.</li>
-
+<li> Därefter skickade jag "dev1" till "main" efter att alla commits hade hanterats. Denna gången fungerade det utan att felmeddelande dök upp.</li> 
+<li> Jag körde också kommandot för att de publiceringsklara filerna skulle vara nåbara för publicering.</li>
+<li> Kunde därefter publicera webbplatsen via Netlify och där granskade jag även med testverktygen "Lighthouse" och "Wave" för att kontrollera eventuella fel/brister. 
+    Men också för att se hur dokument och bilder hade blivit optimerade efter önskemål.
+<li> Efter lite justeringar, de sista commitsen och kommandon kördes inför publicering, upplevdes webbplatsen som publiceringsklar.</li>
 </ul>
+ <!--Page footer with shorter information-->
         <footer class="footer">
-            <p><strong>DT211- Frontend-baserad webbutveckling</strong></p>
+            <p><strong>DT211G- Frontend-baserad webbutveckling</strong></p>
             <p>Moment 1: Automatisering & publicering</p>
             <p>Thne1900</p>
             <p>VT 2025</p>
