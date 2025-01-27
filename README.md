@@ -9,7 +9,7 @@
 - Uppgifterna i filen kontrollerades på vad som ska finnas med, några togs bort och några lades till. 
 - Från detta gjordes en installation med parcel, via terminalen (npm install parcel --save-dev).
 - Packetkataloger/filer hamnade i fil-listan för projektet, som ex node_modules.
-- Skapade en ny fil (.gitigonre) för de filer som inte ska versionshanteras och placerade node_modules och package-lock.json filerna där. 
+- Skapade en ny fil (.gitignore) för de filer som inte ska versionshanteras och placerade node_modules och package-lock.json filerna där. 
 - I "package.json"-filen lades inställningar kring "source" in. Även kommandon "start" och "build" till för att kunna nå den kommande webbplatsen och även att kunna bygga ihop den och dess ihoppackade filer inför publicering.
 - Katalog "src" skapades då det är den parcel utgår ifrån.
 - Skapade de filer/mappar som webbplatsen ska komma att innehålla (html, css, js, images) i src- katalogen. 
@@ -30,3 +30,6 @@
 - Vid arbetet med bilderna, uppkom felmeddelande om att "Sharp" eventullt skulle användas, så därför testades detta att installera.
 - Därefter skapades en ny "branch"-Dev1. I denna utformades documenten ytterligare.
 - Utformade html-documenten mer kring responsiviteten och lade till en hamburger-meny vid mindre skärmstorlek. Använde js-kod för det som placerades i den separata js-filen. 
+- Fortsatt arbete i branch-Dev1, med att strukturerar en del på bildfilerna.
+- Började skriva mer kring arbetsprocessen, som en undersidan på webbplatsen ska bestå av. 
+

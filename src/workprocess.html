@@ -3,30 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Undersidan arbetsprocess, 
+beskrivande text om hur arbetsprocessen kring automatisering och publicering av webbplatsen sett ut">
 <link rel="stylesheet" href="CSS/workprocess.css">
-<title>Webbplats-Demo</title>
+<title>Arbetsprocess</title>
 <script src="js/main.js" type="module"></script>
 </head>
 <body>
     <header id="header">
-<nav>
-    <ul>
-        <li><a href="pictures.html">Fotografier</a></li>
-        <li><a href="workprocess">Arbetsprocess</a></li>
-    </ul>
-</nav>
+        <nav id="menu-responsive">
+            <div id="menu-hamburger" class="menu-hamburger">
+            <span class="row"></span>
+            <span class="row"></span>
+            <span class="row"></span>
+        </div>
+            <ul id="links" class="links">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="pictures.html">Fotografier</a></li>
+                <li><a href="workprocess.html">Arbetsprocess</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="grid-container">
 <h1>Arbetsprocessen:</h1>
 <h2>Initialt</h2>
 <p class="textobject1">
     Här kommer en beskrivning på hur jag initialt började mitt projekt (webbplats demo) 
-    kring automatiscering och publicering.</p>
+    kring automaticering och publicering som Moment 1 byggde på.</p>
 <ul class="list1">
     <li> Började med att skapade en katalog för projektet: "moment1-webbplats.demo".</li>
-       <li> Öppnade upp denna katalog i VSC (Visual Studio Code).</li>
-        <li>I terminalen skrevs ett kommando in för att öppna upp ett nytt "Node Package Manager"-projekt (npm init), 
+    <li> Öppnade upp denna katalog i VSC (Visual Studio Code).</li>
+    <li>I terminalen skrevs ett kommando in för att öppna upp ett nytt "Node Package Manager"-projekt (npm init), 
         där skrevs uppgifter in (author).</li>
+    <li>Därefter kom "package.json"-filen upp i VSC som innehöll inställningar för projektet. Uppgifterna i filen kontrollerades på 
+        vad som ska finnas med, några togs bort och några lades till.</li>
+    <li>Från detta gjordes en installation med parcel, via terminalen (npm install parcel --save-dev). 
+        Packetkataloger/filer kom då upp och hamnade i fil-listan för projektet, som ex node_modules.</li>
+    <li> Jag skapade en ny fil (.gitignore) till de filer som <strong>inte</strong> ska versionshanteras. 
+        Placerade därför node_modules och package-lock.json filerna där då dessa skulle exkluderas versionshantering.</li>
+    <li>I "package.json"-filen lades inställningar kring "source" in, från vilken dokument webbplatsen ska starta ifrån. 
+        Även kommandon som "start" och "build" lades till, för att kunna nå den kommande webbplatsen och även att kunna bygga 
+        ihop den och dess ihoppackade filer inför publicering.</li>
+    <li> Efter det, gjordes en katalog "src", då det är den parcel utgår ifrån som innehåller mina arbetsfiler. 
+        Så i denna src-katalog skapades de filer/mappar som webbplatsen ska komma att innehålla (html, css, js, images). </li> 
+    <li> Sedan skrev jag in lite grundkoder i html och css-filen för att kunna testköra kommandon: "npm start" och "npm build", 
+        för att kontrollera att kommandona fungerade. Jag kunde nå den skapande URL:en vid körning av "npm start" och en 
+        katalog tillkom (dist) vid körning av kommandot "npm build", för den publiceringsklara webbplatsen.</li>
 </ul>
         <footer class="footer">
             <p><strong>DT211- Frontend-baserad webbutveckling</strong></p>
